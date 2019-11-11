@@ -1,0 +1,49 @@
+//// --------------------------
+// Vendor
+// --------------------------
+
+
+@import "vendors/reset.scss";
+@import "vendors/normalize.scss";
+
+//// --------------------------
+//Bootstrap
+//// --------------------------
+
+@import "vendors/bootstrap/bootstrap.scss";
+
+// --------------------------
+// Abstracts
+// --------------------------
+
+@import "abstracts/variable";
+@import "abstracts/mixins";
+@import "abstracts/function";
+// --------------------------
+// Base
+// --------------------------
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utlitites";
+
+// --------------------------
+// Components
+// --------------------------
+
+
+// --------------------------
+// Layouts
+// --------------------------
+@import "layouts/header";
+@import "layouts/grid";
+@import "layouts/footer";
+@import "layouts/navigation";
+@import "layouts/popup";
+
+//// --------------------------
+// Pages
+// --------------------------
+
+@import "pages/home";

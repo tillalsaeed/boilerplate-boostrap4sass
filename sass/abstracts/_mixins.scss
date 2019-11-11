@@ -1,0 +1,60 @@
+@mixin clearfix {
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+
+// Media Query Manager
+
+
+// 0 to 600 Phone
+
+
+// 600 to 900 Tablet portairt
+
+// 900 t0 1200 tablet landscape
+
+// 1200 - 1800 is where normal styles apply
+
+// 1800 + big Desktops
+
+
+
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == phone {
+
+        @media only screen and (max-width: 37.5em) {     //600px
+            @content;
+        }
+    }
+
+        @if $breakpoint == tab-port {
+
+            @media only screen and (max-width: 56.25em) {   //900px
+                @content;
+            }
+        }
+
+        @if $breakpoint == tab-land {
+
+            @media only screen and (max-width: 75em) {   //1200px
+                @content;
+            }
+        }
+
+        @if $breakpoint == big-desk {
+
+            @media only screen and (min-width: 112.5em) {     //1800px
+                @content; 
+            }
+        }
+
+       
+
+    }
