@@ -1,0 +1,166 @@
+/*==========================*/
+/*Intert Explore Prefix IE 6*/
+/*==========================*/
+* html .ie6 {}
+
+/* // Or */
+
+
+.ie6 {
+    /* // _property: value; */
+}
+
+/*==========================*/
+/*Intert Explore Prefix ie7*/
+/*==========================*/
+*+html .ie7 {}
+
+/* // Or */
+
+*:first-child+html .ie7 {}
+
+/*==========================*/
+/*Intert Explore Prefix IE 6 and 7 */
+/*==========================*/
+
+@media screen\9 {
+    .ie67 {}
+}
+
+/* // or. */
+
+.ie67 {}
+
+/* // or. */
+.ie67 {}
+
+
+/*==========================*/
+/*Intert Explore Prefix IE 6, 7 and 8*/
+/*==========================*/
+@media \0screen\,screen\9 {
+    .ie678 {}
+}
+
+/*==========================*/
+/*Intert Explore Prefix IE 8 */
+/*==========================*/
+
+html>
+
+/**/
+body .ie8 {}
+
+/* or */
+
+@media \0screen {
+    .ie8 {}
+}
+
+/*==========================*/
+/*Intert Explore Prefix IE 8 Standards Mode Only*/
+/*==========================*/
+.ie8 {}
+
+/*==========================*/
+/*Intert Explore Prefix IE 8,9 and 10*/
+/*==========================*/
+@media screen\0 {}
+
+/*==========================*/
+/*Intert Explore Prefix IE 9 only*/
+/*==========================*/
+
+@media screen and (min-width:0\0) and (min-resolution: .001dpcm) {
+
+    /* // IE9 CSS */
+
+}
+
+/*==========================*/
+/*Intert Explore Prefix IE 9 and above*/
+/*==========================*/
+
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+    /* // IE9+ CSS */
+
+}
+
+/*==========================*/
+/*Intert Explore Prefix*/
+/*==========================*/
+
+@media screen and (min-width:0\0) {
+    /* backslash-9 removes ie11+ & old Safari 4 */
+}
+
+
+/*==========================*/
+/*Intert Explore Prefix IE 10*/
+/*==========================*/
+
+_:-ms-lang(x),
+.ie10 {}
+
+/*==========================*/
+/*Intert Explore Prefix IE 10 AND ABOVE*/
+/*==========================*/
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {}
+
+/*==========================*/
+/*Intert Explore Prefix IE 11 (and above..)*/
+/*==========================*/
+_:-ms-fullscreen,
+:root .ie11up {
+    /* property: value; */
+}
+
+/*============================*/
+/*Microsft Edge*
+/*============================*/
+
+@supports (-ms-ime-align:auto) {}
+
+
+/*============================*/
+/*Mozilla Prefixer*
+/*============================*/
+
+@-moz-document url-prefix() {}
+
+/* // Quantum Only (Stylo) */
+
+@-moz-document url-prefix() {
+    @supports (animation: calc(0s)) {}
+}
+
+/* Chrome and Safari Any version */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {}
+
+
+/* // Chrome 29+ Only */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {}
+
+/* // Safari 6 to 10 version */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        /* // Here */
+    }
+}
+
+/* Safari (7.1+) */
+
+_::-webkit-full-page-media,
+_:future,
+:root .safari_only {}
+
+/* // Safari 10+ Only */
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        /* // Here */
+    }
+}
